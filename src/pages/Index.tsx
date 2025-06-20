@@ -1,25 +1,18 @@
 
 import React from 'react';
-import { LanguageProvider } from '../contexts/LanguageContext';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
-import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-slate-900">
-        <Header />
-        <Hero />
-        <Services />
-        <Portfolio />
-        <Contact />
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <Services />
+      <Footer />
+    </div>
   );
 };
 
