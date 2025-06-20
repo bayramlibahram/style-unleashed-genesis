@@ -63,23 +63,25 @@ const Portfolio = () => {
     : portfolioItems.filter(item => item.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="py-20 bg-navy-secondary relative particles-bg">
+      <div className="absolute inset-0 parallax-blur-bg"></div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t('portfolio')}
           </h2>
           
-          {/* Filter buttons */}
+          {/* Enhanced filter buttons with glass morphism */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {filters.map((filter) => (
               <button
                 key={filter.key}
                 onClick={() => setActiveFilter(filter.key)}
-                className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                className={`px-6 py-2 rounded-full transition-all duration-300 hover-lift ${
                   activeFilter === filter.key
-                    ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-slate-900 font-semibold'
-                    : 'bg-slate-700 text-gray-300 hover:bg-slate-600 hover:text-white'
+                    ? 'glass-card gold-glow bg-gradient-to-r from-gold-primary to-gold-secondary text-navy-primary font-semibold'
+                    : 'glass-panel text-gray-300 hover:text-white border-teal/20'
                 }`}
               >
                 {filter.label.az}
@@ -92,7 +94,7 @@ const Portfolio = () => {
           {filteredItems.map((item) => (
             <div 
               key={item.id}
-              className="group relative bg-slate-900 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-yellow-400/10 transition-all duration-300 hover:-translate-y-2"
+              className="group glass-card rounded-xl overflow-hidden hover-lift transition-all duration-500 border-gold/20 hover:border-gold/40"
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -100,11 +102,12 @@ const Portfolio = () => {
                   alt={item.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-primary via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gold-primary/20 opacity-0 group-hover:opacity-20 transition-opacity duration-300 filter blur-sm"></div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gold-primary transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-400 text-sm">

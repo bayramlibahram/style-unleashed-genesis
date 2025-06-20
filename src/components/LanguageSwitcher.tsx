@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors px-3 py-2 rounded-lg hover:bg-yellow-400/10"
+        className="glass-card flex items-center space-x-2 text-gold-primary hover:text-gold-secondary transition-colors px-3 py-2 rounded-lg hover:gold-glow"
       >
         <span>{currentLanguage?.flag}</span>
         <span className="text-sm font-medium">{currentLanguage?.code.toUpperCase()}</span>
@@ -27,7 +27,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full right-0 mt-1 bg-slate-800 border border-slate-700 rounded-lg shadow-xl overflow-hidden z-50 min-w-[160px]">
+        <div className="absolute top-full right-0 mt-1 glass-card border border-gold/30 rounded-lg shadow-xl overflow-hidden z-50 min-w-[160px]">
           {languages.map((lang) => (
             <button
               key={lang.code}
@@ -35,8 +35,8 @@ const LanguageSwitcher = () => {
                 setLanguage(lang.code as 'az' | 'en' | 'ru');
                 setIsOpen(false);
               }}
-              className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-slate-700 transition-colors ${
-                language === lang.code ? 'bg-yellow-400/10 text-yellow-400' : 'text-white'
+              className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gold-primary/10 transition-colors ${
+                language === lang.code ? 'bg-gold-primary/20 text-gold-primary' : 'text-white'
               }`}
             >
               <span>{lang.flag}</span>
