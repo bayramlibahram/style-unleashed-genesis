@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
@@ -65,7 +64,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">E-mail</div>
-                    <div className="text-gray-600">hello@smartcode.az</div>
+                    <div className="text-gray-600">
+                      <div>hello@smartcode.az</div>
+                      <div>info@smartcode.az</div>
+                    </div>
                   </div>
                 </div>
                 
@@ -75,7 +77,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Telefon</div>
-                    <div className="text-gray-600">+994 (55) 123-45-67</div>
+                    <div className="text-gray-600">
+                      <div>+994 (55) 123-45-67</div>
+                      <div>+994 50 709 39 96</div>
+                    </div>
                   </div>
                 </div>
                 

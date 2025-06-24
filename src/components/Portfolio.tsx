@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, Code, Smartphone, ShoppingCart, BarChart3 } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: 'E-Government Portal',
       category: 'web',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Hökumət xidmətləri üçün tam avtomatlaşdırılmış portal',
       tech: ['React', 'Node.js', 'PostgreSQL'],
       icon: Code
@@ -19,7 +18,7 @@ const Portfolio = () => {
       id: 2,
       title: 'Banking Mobile App',
       category: 'mobile',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Mobil bank tətbiqi - güvənli və istifadəçi dostu',
       tech: ['Flutter', 'Firebase', 'Biometric Auth'],
       icon: Smartphone
@@ -28,7 +27,7 @@ const Portfolio = () => {
       id: 3,
       title: 'E-commerce Platform',
       category: 'ecommerce',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Müasir online mağaza həlli - tam avtomatlaşdırılmış',
       tech: ['Next.js', 'Stripe', 'AWS'],
       icon: ShoppingCart
@@ -37,7 +36,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Business Analytics Dashboard',
       category: 'web',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Real-time analitika və hesabat sistemi',
       tech: ['React', 'D3.js', 'Python API'],
       icon: BarChart3
@@ -46,7 +45,7 @@ const Portfolio = () => {
       id: 5,
       title: 'Restaurant Management App',
       category: 'mobile',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Restoran sifarişləri və masa rezervasiya sistemi',
       tech: ['React Native', 'Socket.io', 'MongoDB'],
       icon: Smartphone
@@ -55,7 +54,7 @@ const Portfolio = () => {
       id: 6,
       title: 'Healthcare Platform',
       category: 'web',
-      image: '/placeholder.svg',
+      image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       description: 'Tibbi mərkəzlər üçün idarəetmə sistemi',
       tech: ['Vue.js', 'Laravel', 'MySQL'],
       icon: Code
@@ -107,8 +106,13 @@ const Portfolio = () => {
               key={project.id}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                <project.icon className="w-16 h-16 text-gray-400" />
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                   <button className="opacity-0 group-hover:opacity-100 bg-white rounded-full p-3 transform scale-90 group-hover:scale-100 transition-all duration-300">
                     <ExternalLink className="w-5 h-5 text-gray-700" />
