@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -19,9 +18,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">S</span>
-            </div>
+            <img 
+              src="/smartcode-gold-logo.png" 
+              alt="Smartcode.az Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="ml-3 text-2xl font-bold text-gray-900">Smartcode.az</span>
           </div>
           
