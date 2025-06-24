@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, Play } from 'lucide-react';
+import DemoModal from './DemoModal';
 
 const Hero = () => {
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-yellow-50"></div>
@@ -30,7 +33,10 @@ const Hero = () => {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             
-            <button className="group flex items-center text-gray-700 hover:text-yellow-600 transition-colors">
+            <button 
+              onClick={() => setIsDemoModalOpen(true)}
+              className="group flex items-center text-gray-700 hover:text-yellow-600 transition-colors"
+            >
               <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center mr-3 group-hover:shadow-xl transition-shadow">
                 <Play className="w-5 h-5 ml-1" />
               </div>
@@ -58,6 +64,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Demo Modal */}
+      <DemoModal 
+        isOpen={isDemoModalOpen} 
+        onClose={() => setIsDemoModalOpen(false)} 
+      />
     </section>
   );
 };
