@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Users, Award, Zap, Shield } from 'lucide-react';
 
@@ -45,19 +44,28 @@ const About = () => {
               Behram Bayramlı - Founder & CEO
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              5 ildən artıq təcrübəyə malik Behram Bayramlı, Smartcode.az-ı yaradarkən məqsəd 
-              Azərbaycanda texnoloji innovasiyaları həyata keçirmək və müştərilərin rəqəmsal 
-              transformasiya yolculuqlarında etibarlı tərəfdaş olmaq idi.
+              5+ ildən artıq təcrübəyə malik Smartcode.az, Azərbaycan bazarında rəqəmsal 
+              transformasiya sahəsində aparıcı mövqe tutur. Biz React, Node.js, Next.js, 
+              Python və Go texnologiyalarından istifadə edərək müasir veb tətbiqlər, 
+              AI həlləri və avtomatlaşdırma sistemləri yaradırıq.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Komandamız React, Node.js, AI modellər və müasir avtomatlaşdırma texnologiyalarından 
-              istifadə edərək hər bir layihəni uğurla həyata keçirir.
+              Komandamız hökumət qurumları və özəl şirkətlər üçün e-ticarət platformaları, 
+              mobil tətbiqlər, CRM sistemləri və biznes proseslərinin optimallaşdırılması 
+              sahəsində kompleks həllər təqdim edir. Müştərilərimizin rəqəmsal 
+              transformasiya yolculuqlarında etibarlı tərəfdaş olaraq, innovativ 
+              texnologiyalar vasitəsilə onların biznes məqsədlərinə çatmalarına kömək edirik.
+            </p>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              <strong>Əlaqə:</strong> hello@smartcode.az | +994 (55) 123-45-67
             </p>
             <div className="flex flex-wrap gap-4">
               <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">React.js</span>
               <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Node.js</span>
+              <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Next.js</span>
               <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">AI & ML</span>
-              <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Mobile Apps</span>
+              <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Python</span>
+              <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Go</span>
             </div>
           </div>
           
