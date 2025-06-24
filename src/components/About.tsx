@@ -67,26 +67,6 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl mb-6">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">
-                Bizimlə əlaqə saxlayın:
-              </h4>
-              <div className="space-y-2 text-gray-700">
-                <div className="flex items-center">
-                  <span className="font-medium">📧 E-mail:</span>
-                  <span className="ml-2">info@smartcode.az</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="font-medium">📞 Telefon:</span>
-                  <span className="ml-2">+99450-709-39-96</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="font-medium">🌐 Sayt:</span>
-                  <span className="ml-2">smartcode.az</span>
-                </div>
-              </div>
-            </div>
-
             <p className="text-lg font-semibold text-gray-900 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               Peşəkar və etibarlı tərəfdaşınız Smartcode ilə rəqəmsal dünyada öz yerinizi tutun!
             </p>
