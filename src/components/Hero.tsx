@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 
@@ -17,8 +16,8 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Next-Gen 
-            <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent"> Web, AI & Automation</span>
+            Yeni Nəsil 
+            <span className="bg-gradient-to-r from-yellow-500 to-orange-500 bg-clip-text text-transparent"> Veb, Süni İntellekt və Avtomatlaşdırma</span> Həlləri
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
